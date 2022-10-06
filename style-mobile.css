@@ -1,0 +1,121 @@
+@media (max-width:970px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    nav{
+        display: flex;
+        height: 10vh;
+    }
+
+    .logo>a{
+        font-weight: 600;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    nav .menu-icon{
+        display: block
+    }
+
+    nav ul{
+        position: fixed;
+        margin: 0;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(200%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.3s ease-out;
+        background-color: #5654b3;
+    }
+
+    button .nav-btn.active{
+        background-color: #fa7873;
+    }
+
+
+    nav ul.active{
+        transform: translate(50%);
+    }
+
+    nav ul.deactivade{
+        transform: translate(200%);
+    }
+
+    nav ul li{
+        padding: 10px;
+    }
+
+    nav ul li a{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    nav ul button{
+        background-color: #f1676d;
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    p{
+        display: none;
+    }
+
+    .text-container{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .text-container h1{
+        
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    
+    div input{
+
+        margin-top: 25px;
+        width: 70%;
+        height: 45px;
+    }
+
+    input:focus{
+        text-align: left;
+        border-color: transparent;
+        border-style: none;
+    }
+
+    .social-medias{
+        display: flex;
+        justify-content: center;
+    }
+    .social-medias i{
+
+        font-size: 40px;
+        margin: 15px 1px;
+
+    }
+
+    .img-box{
+        display: flex;
+        justify-content: center;
+    }
+    .img-box img{
+
+        width: 450px;
+    }
+
+
+}
